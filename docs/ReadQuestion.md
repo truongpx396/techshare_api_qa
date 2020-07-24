@@ -14,6 +14,7 @@ Name | Type | Description | Notes
 **createdById** | **String** |  | [optional] [default to null]
 **createdByLogin** | **String** |  | [optional] [default to null]
 **createdByFullname** | **String** |  | [optional] [default to null]
+**createdByPicture** | **String** |  | [optional] [default to null]
 **updatedById** | **String** |  | [optional] [default to null]
 **createdDate** | [**DateTime**](DateTime.md) |  | [optional] [default to null]
 **updatedDate** | [**DateTime**](DateTime.md) |  | [optional] [default to null]

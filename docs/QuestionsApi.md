@@ -16,9 +16,10 @@ Method | HTTP request | Description
 [**questionsDeleteUpVote**](QuestionsApi.md#questionsDeleteUpVote) | **DELETE** /questions/{questionId}/upvote | QuestionsDeleteUpVote
 [**questionsDeleteVerificationForAnswer**](QuestionsApi.md#questionsDeleteVerificationForAnswer) | **DELETE** /questions/{questionId}/verified-answer | QuestionsDeleteVerificationForAnswer
 [**questionsGet**](QuestionsApi.md#questionsGet) | **GET** /questions | QuestionsGet
-[**questionsGetBookMarkedQuestions**](QuestionsApi.md#questionsGetBookMarkedQuestions) | **GET** /questions/bookmark | QuestionsGetBookMarkedQuestions
+[**questionsGetBookMarkedQuestions**](QuestionsApi.md#questionsGetBookMarkedQuestions) | **GET** /questions/bookmarks | QuestionsGetBookMarkedQuestions
 [**questionsGetById**](QuestionsApi.md#questionsGetById) | **GET** /questions/{questionId} | QuestionsGetById
 [**questionsGetMyQuestions**](QuestionsApi.md#questionsGetMyQuestions) | **GET** /questions/me | QuestionsGetMyQuestions
+[**questionsGetUserQuestions**](QuestionsApi.md#questionsGetUserQuestions) | **GET** /questions/user/{userId} | QuestionsGetUserQuestions
 [**questionsUnbookmarkQuestion**](QuestionsApi.md#questionsUnbookmarkQuestion) | **DELETE** /questions/{questionId}/bookmark | QuestionsUnbookmarkQuestion
 [**questionsUpdate**](QuestionsApi.md#questionsUpdate) | **PUT** /questions/{questionId} | QuestionsUpdate
 [**questionsVerifyAnswer**](QuestionsApi.md#questionsVerifyAnswer) | **PUT** /questions/{questionId}/verified-answer/{answerId} | QuestionsVerifyAnswer
@@ -454,6 +455,51 @@ try {
 
 ### Parameters
 This endpoint does not need any parameter.
+
+### Return type
+
+[**List<ReadQuestion>**](ReadQuestion.md)
+
+### Authorization
+
+[auth](../README.md#auth)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **questionsGetUserQuestions**
+> List<ReadQuestion> questionsGetUserQuestions(userId)
+
+QuestionsGetUserQuestions
+
+
+
+### Example 
+```dart
+import 'package:swagger/api.dart';
+// TODO Configure OAuth2 access token for authorization: auth
+//swagger.api.Configuration.accessToken = 'YOUR_ACCESS_TOKEN';
+
+var api_instance = new QuestionsApi();
+var userId = userId_example; // String | 
+
+try { 
+    var result = api_instance.questionsGetUserQuestions(userId);
+    print(result);
+} catch (e) {
+    print("Exception when calling QuestionsApi->questionsGetUserQuestions: $e\n");
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **userId** | **String**|  | 
 
 ### Return type
 

@@ -1,7 +1,8 @@
-library swagger_qanda.api;
+library swagger.api;
 
 import 'dart:async';
 import 'dart:convert';
+import 'package:http/browser_client.dart';
 import 'package:http/http.dart';
 
 part 'api_client.dart';
@@ -36,6 +37,6 @@ part 'model/read_verified_answer.dart';
 part 'model/update_answer.dart';
 part 'model/update_comment.dart';
 part 'model/update_question.dart';
-part 'configuration.dart';
+
 
 ApiClient defaultApiClient = new ApiClient();

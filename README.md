@@ -71,11 +71,14 @@ Class | Method | HTTP request | Description
 *AnswerCommentsApi* | [**answerCommentsDeleteComment**](docs//AnswerCommentsApi.md#answercommentsdeletecomment) | **DELETE** /questions/{questionId}/answers/{answerId}/comments/{commentId} | AnswerCommentsDeleteComment
 *AnswerCommentsApi* | [**answerCommentsDeleteUpVoteComment**](docs//AnswerCommentsApi.md#answercommentsdeleteupvotecomment) | **DELETE** /questions/{questionId}/answers/{answerId}/comments/{commentId}/upvote | AnswerCommentsDeleteUpVoteComment
 *AnswerCommentsApi* | [**answerCommentsUpdateComment**](docs//AnswerCommentsApi.md#answercommentsupdatecomment) | **PUT** /questions/{questionId}/answers/{answerId}/comments/{commentId} | AnswerCommentsUpdateComment
+*AnswersApi* | [**answersBookmarkAnswer**](docs//AnswersApi.md#answersbookmarkanswer) | **PUT** /questions/{questionId}/answers/{answerId}/bookmark | AnswersBookmarkAnswer
 *AnswersApi* | [**answersCreate**](docs//AnswersApi.md#answerscreate) | **POST** /questions/{questionId}/answers | AnswersCreate
 *AnswersApi* | [**answersCreateUpVoteAnswer**](docs//AnswersApi.md#answerscreateupvoteanswer) | **PUT** /questions/{questionId}/answers/{answerId}/upvote | AnswersCreateUpVoteAnswer
 *AnswersApi* | [**answersDelete**](docs//AnswersApi.md#answersdelete) | **DELETE** /questions/{questionId}/answers/{answerId} | AnswersDelete
 *AnswersApi* | [**answersDeleteUpVoteAnswer**](docs//AnswersApi.md#answersdeleteupvoteanswer) | **DELETE** /questions/{questionId}/answers/{answerId}/upvote | AnswersDeleteUpVoteAnswer
+*AnswersApi* | [**answersGetBookMarkedAnswers**](docs//AnswersApi.md#answersgetbookmarkedanswers) | **GET** /questions/answers/bookmarks | AnswersGetBookMarkedAnswers
 *AnswersApi* | [**answersPut**](docs//AnswersApi.md#answersput) | **PUT** /questions/{questionId}/answers/{answerId} | AnswersPut
+*AnswersApi* | [**answersUnbookmarkAnswer**](docs//AnswersApi.md#answersunbookmarkanswer) | **DELETE** /questions/{questionId}/answers/{answerId}/bookmark | AnswersUnbookmarkAnswer
 *QuestionCommentsApi* | [**questionCommentsCreateComment**](docs//QuestionCommentsApi.md#questioncommentscreatecomment) | **POST** /questions/{questionId}/comments | QuestionCommentsCreateComment
 *QuestionCommentsApi* | [**questionCommentsCreateUpVoteComment**](docs//QuestionCommentsApi.md#questioncommentscreateupvotecomment) | **PUT** /questions/{questionId}/comments/{commentId}/upvote | QuestionCommentsCreateUpVoteComment
 *QuestionCommentsApi* | [**questionCommentsDeleteComment**](docs//QuestionCommentsApi.md#questioncommentsdeletecomment) | **DELETE** /questions/{questionId}/comments/{commentId} | QuestionCommentsDeleteComment
@@ -88,9 +91,10 @@ Class | Method | HTTP request | Description
 *QuestionsApi* | [**questionsDeleteUpVote**](docs//QuestionsApi.md#questionsdeleteupvote) | **DELETE** /questions/{questionId}/upvote | QuestionsDeleteUpVote
 *QuestionsApi* | [**questionsDeleteVerificationForAnswer**](docs//QuestionsApi.md#questionsdeleteverificationforanswer) | **DELETE** /questions/{questionId}/verified-answer | QuestionsDeleteVerificationForAnswer
 *QuestionsApi* | [**questionsGet**](docs//QuestionsApi.md#questionsget) | **GET** /questions | QuestionsGet
-*QuestionsApi* | [**questionsGetBookMarkedQuestions**](docs//QuestionsApi.md#questionsgetbookmarkedquestions) | **GET** /questions/bookmark | QuestionsGetBookMarkedQuestions
+*QuestionsApi* | [**questionsGetBookMarkedQuestions**](docs//QuestionsApi.md#questionsgetbookmarkedquestions) | **GET** /questions/bookmarks | QuestionsGetBookMarkedQuestions
 *QuestionsApi* | [**questionsGetById**](docs//QuestionsApi.md#questionsgetbyid) | **GET** /questions/{questionId} | QuestionsGetById
 *QuestionsApi* | [**questionsGetMyQuestions**](docs//QuestionsApi.md#questionsgetmyquestions) | **GET** /questions/me | QuestionsGetMyQuestions
+*QuestionsApi* | [**questionsGetUserQuestions**](docs//QuestionsApi.md#questionsgetuserquestions) | **GET** /questions/user/{userId} | QuestionsGetUserQuestions
 *QuestionsApi* | [**questionsUnbookmarkQuestion**](docs//QuestionsApi.md#questionsunbookmarkquestion) | **DELETE** /questions/{questionId}/bookmark | QuestionsUnbookmarkQuestion
 *QuestionsApi* | [**questionsUpdate**](docs//QuestionsApi.md#questionsupdate) | **PUT** /questions/{questionId} | QuestionsUpdate
 *QuestionsApi* | [**questionsVerifyAnswer**](docs//QuestionsApi.md#questionsverifyanswer) | **PUT** /questions/{questionId}/verified-answer/{answerId} | QuestionsVerifyAnswer

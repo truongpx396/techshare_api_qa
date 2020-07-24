@@ -1,4 +1,4 @@
-part of swagger_qanda.api;
+part of swagger.api;
 
 class QuestionSortType {
   /// The underlying value of this enum member.
@@ -12,17 +12,10 @@ class QuestionSortType {
 
   QuestionSortType.fromJson(dynamic data) {
     switch (data) {
-      case 0:
-        value = data;
-        break;
-      case 1:
-        value = data;
-        break;
-      case 2:
-        value = data;
-        break;
-      default:
-        throw ('Unknown enum value to decode: $data');
+          case 0: value = data; break;
+          case 1: value = data; break;
+          case 2: value = data; break;
+    default: throw('Unknown enum value to decode: $data');
     }
   }
 
@@ -30,3 +23,4 @@ class QuestionSortType {
     return data.value;
   }
 }
+
